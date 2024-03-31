@@ -1,0 +1,431 @@
+:root {
+  --primary: #ffffff;
+  --bg: rgba(8, 8, 8, 0.984);
+  background-blend-mode: color-burn;
+}
+@import url("https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "poppins", sans-serif;
+  background-color: var(--bg);
+  color: var(--bg);
+  width: 300vh;
+}
+.background {
+  display: block;
+  object-fit: cover;
+  height: 100%;
+  width: 100vh;
+}
+.data {
+  display: block;
+  position: relative;
+  z-index: 9999;
+  margin-top: -400vh;
+}
+.data table {
+  color: white;
+}
+.data .tabel1 {
+  height: 50vh;
+  margin-bottom: 10vh;
+  border: 1px solid black;
+}
+
+.tabel2 {
+  margin-top: 20px;
+}
+/* media queries */
+
+/* laptop */
+@media (max-width: 1000px) {
+  html {
+    font-size: 75%;
+  }
+  .navbar .navbar-logo img {
+    width: 160px;
+    position: absolute;
+    margin-top: -8vh;
+    margin-left: -7vh;
+  }
+  #hamburger-menu {
+    display: inline-block;
+    margin-left: 10vh;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    right: -100%;
+    width: 20rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: rgb(0, 0, 0);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+  .navbar .navbar-nav a:hover {
+    color: green;
+  }
+
+  .navbar .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid rgb(123, 6, 78);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+  }
+  .banner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner video {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .daftar {
+    display: block;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    padding-right: 50px;
+    border-radius: 20px;
+    height: 80vh;
+    width: 120vh;
+  }
+
+  .daftar h1 {
+    color: #c50000;
+    margin-top: 10vh;
+    padding-bottom: 20vh;
+    margin-left: 73vh;
+    font-size: 25px;
+  }
+  .daftar .slogan {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    margin-left: 78vh;
+    font-size: 15px;
+    margin-top: -20vh;
+    font-style: italic;
+  }
+  .daftar li {
+    padding: 3vh;
+    color: rgb(0, 0, 0);
+    margin-left: 75vh;
+    margin-top: -4vh;
+    display: block;
+  }
+
+  .daftar input {
+    width: 220px;
+    padding: 1vh;
+    border-radius: 10px;
+    background-color: rgb(255, 250, 250);
+    border: 1px solid black;
+  }
+
+  .daftar button {
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+    margin-left: 78vh;
+    height: 30px;
+    width: 235px;
+    color: white;
+    background-color: #ab0202;
+    border-radius: 20px;
+  }
+  .daftar a {
+    height: 5vh;
+    margin-left: -2vh;
+    width: 20vh;
+    color: rgb(13, 0, 130);
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+  }
+  .daftar .bb {
+    color: black;
+    padding-left: 78vh;
+  }
+  .daftar img {
+    object-fit: cover;
+    width: 400px;
+    height: 400.5px;
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgb(199, 1, 1);
+  }
+}
+
+/* tablet */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+  .navbar .navbar-logo img {
+    width: 160px;
+    position: absolute;
+    margin-top: -8vh;
+    margin-left: -7vh;
+  }
+  #hamburger-menu {
+    display: inline-block;
+    margin-left: 10vh;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    right: -100%;
+    width: 20rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: rgb(0, 0, 0);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+  .navbar .navbar-nav a:hover {
+    color: green;
+  }
+
+  .navbar .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid rgb(123, 6, 78);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+  }
+}
+/* mobile phone */
+
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+  .navbar .navbar-logo img {
+    width: 160px;
+    position: absolute;
+    margin-top: -8vh;
+    margin-left: -7vh;
+  }
+  #hamburger-menu {
+    display: inline-block;
+    margin-left: 10vh;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    right: -100%;
+    width: 20rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: rgb(0, 0, 0);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+  .navbar .navbar-nav a:hover {
+    color: green;
+  }
+
+  .navbar .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid rgb(123, 6, 78);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+  }
+  .banner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner video {
+    position: absolute;
+    object-fit: cover;
+    width: 230%;
+    margin-top: -70vh;
+    height: 0%;
+  }
+
+  .daftar {
+    margin-top: 15vh;
+    display: block;
+    position: absolute;
+    background-color: rgb(249, 245, 245);
+    height: 50vh;
+    border-radius: 1px;
+    width: 40vh;
+    padding-bottom: 30vh;
+  }
+
+  .daftar h1 {
+    color: #c50000;
+    margin-top: 2vh;
+    padding-bottom: 5vh;
+    margin-left: 5vh;
+    font-size: 25px;
+  }
+  .daftar .slogan {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    margin-left: 7vh;
+    font-size: 15px;
+    margin-top: -6vh;
+    font-style: italic;
+  }
+  .daftar li {
+    padding: 3vh;
+    color: rgb(0, 0, 0);
+    margin-left: 5vh;
+    margin-top: -5vh;
+    display: block;
+    font-size: 20px;
+  }
+  .sistemeeror .systemcek {
+    z-index: 9999;
+    margin-top: -4vh;
+    margin-left: -70vh;
+    position: absolute;
+  }
+  .daftar input {
+    width: 220px;
+    padding: 1vh;
+    border-radius: 10px;
+    background-color: rgb(255, 250, 250);
+    border: 1px solid black;
+  }
+
+  .daftar button {
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    margin-left: 8vh;
+    font-size: 20px;
+    height: 30px;
+    width: 235px;
+    color: white;
+    background-color: #ab0202;
+    border-radius: 20px;
+  }
+  .daftar a {
+    height: 5vh;
+    margin-left: -4vh;
+    width: 20vh;
+    color: rgb(13, 0, 130);
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+  }
+  .daftar .bb {
+    color: black;
+    font-size: 15px;
+    margin-top: -1vh;
+    padding-left: 8vh;
+  }
+  .daftar img {
+    object-fit: cover;
+    width: 150px;
+    margin-top: -15vh;
+    margin-left: 15vh;
+    height: 150px;
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgb(199, 1, 1);
+  }
+
+  /*footer*/
+  footer {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin-top: 33vh;
+  }
+  .futer {
+    background-color: #ac0000;
+  }
+
+  .futer .social a {
+    color: #eee;
+  }
+  .futer .social {
+    padding: 0 0;
+  }
+  .futer .social a:hover {
+    color: var(--bg);
+  }
+  .futer .credit p {
+    color: #eee;
+  }
+  .credit a {
+    color: #0b8600;
+    font-weight: 700;
+  }
+  .futer .credit a:hover {
+    color: #eee;
+  }
+}
