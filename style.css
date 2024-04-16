@@ -961,7 +961,7 @@ body {
 
 @media (max-width: 480px) {
   html {
-    font-size: 100%;
+    font-size: 50%;
   }
   .navbar {
     display: flex;
@@ -1003,7 +1003,7 @@ body {
   }
 
   .navbar .navbar-nav.active {
-    left: -68%;
+    left: 0%;
   }
 
   .navbar .navbar-nav a {
@@ -1061,7 +1061,7 @@ body {
     color: white;
     width: 18vh;
     height: 15vh;
-    margin-left: 2vh;
+    margin-left: 8vh;
     margin-top: 0vh;
     font-size: 12px;
   }
@@ -1084,14 +1084,14 @@ body {
     width: 50px;
     height: 50px;
     margin-top: 2vh;
-    margin-left: 5vh;
+    margin-left: 3.75vh;
   }
   .container1 .icon3 {
     position: relative;
     color: white;
     width: 21vh;
     height: 15vh;
-    margin-left: 1vh;
+    margin-left: 7vh;
     margin-top: 0vh;
     font-size: 12px;
   }
@@ -1099,14 +1099,14 @@ body {
     width: 50px;
     height: 50px;
     margin-top: 2vh;
-    margin-left: 5vh;
+    margin-left: 3vh;
   }
   .container1 .icon4 {
     position: relative;
     color: white;
     width: 21vh;
     height: 15vh;
-    margin-left: 1vh;
+    margin-left: -3vh;
     margin-top: 0vh;
     font-size: 12px;
   }
@@ -1114,7 +1114,7 @@ body {
     width: 50px;
     height: 50px;
     margin-top: 2vh;
-    margin-left: 5vh;
+    margin-left: 3.5vh;
   }
 
   .container2 {
@@ -1231,6 +1231,7 @@ body {
     font-weight: 1000;
     font-size: 12px;
     height: 3vh;
+    padding: 0.5rem;
     border-radius: 10px;
     align-items: center;
   }
@@ -1263,38 +1264,39 @@ body {
   .container3 .gambar h1 {
     color: rgb(0, 0, 0);
     font-size: 20px;
-    margin-left: 3vh;
-    width: 30vh;
-    margin-top: -7vh;
+    margin-left: 0vh;
+    width: 70vh;
+    margin-top: -11vh;
     padding: 8rem;
-    text-align: left;
+    text-align: center;
   }
   .container3 .gambar p {
     color: rgb(26, 26, 26);
     font-size: 13px;
-    margin-left: 10vh;
+    margin-left: 7vh;
     width: 35vh;
-    margin-top: -1vh;
-    text-align: left;
+    margin-top: -6vh;
+    text-align: justify;
   }
 
   .container4 {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 50%;
+    height: 80px;
     padding-top: 4rem;
   }
   .container4 .towe {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 100%;
+    height: 100px;
   }
 
   .container4 .towe img {
     width: 100%;
     object-fit: cover;
+    height: 400px;
   }
   .container4 .towe .ss {
     color: white;
@@ -1350,12 +1352,10 @@ body {
   .whatsaap img {
     height: 5vh;
     width: 5vh;
-    margin-left: -8vh;
-    margin-top: 31vh;
   }
   /*footer*/
   .container5 {
-    margin-top: 50vh;
+    margin-top: 30vh;
     width: 100%;
     position: relative;
     background-color: #034b9d;
@@ -1364,10 +1364,11 @@ body {
     margin-left: 23vh;
   }
   .container5 .credit {
-    margin-left: 0vh;
-    width: 100%;
+    margin-left: 18vh;
+    width: 20vh;
   }
   .container5 a {
     color: black;
   }
 }
+
