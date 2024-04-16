@@ -988,6 +988,7 @@ body {
     display: inline-block;
     margin-left: -2vh;
     z-index: 9999;
+    overflow: hidden;
     margin-top: -1.5vh;
   }
   .navbar .navbar-nav {
@@ -1239,6 +1240,8 @@ body {
     flex-wrap: wrap;
     width: 100%;
     height: 60vh;
+    justify-content: center;
+    align-items: center;
     margin-top: 0vh;
   }
 
@@ -1250,8 +1253,10 @@ body {
   }
   .container3 .gambar img {
     margin-left: 4vh;
-    width: 40vh;
+    width: 35vh;
     height: 30vh;
+    justify-content: center;
+    align-items: center;
     margin-top: 6vh;
     border-radius: 30px;
   }
