@@ -1003,7 +1003,7 @@ body {
   }
 
   .navbar .navbar-nav.active {
-    left: -68%;
+    left: -58%;
   }
 
   .navbar .navbar-nav a {
@@ -1051,8 +1051,7 @@ body {
     width: 100%;
     height: auto;
     margin-left: 0vh;
-    justify-content: center;
-    align-items: center;
+
     margin-top: -62vh;
     background-color: rgb(119, 200, 253);
   }
