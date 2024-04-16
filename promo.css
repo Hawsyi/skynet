@@ -27,19 +27,21 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 2vh;
-  background: transparent;
+  padding: 1rem 7%;
+  background-color: rgba(132, 220, 247, 0.479);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 9999;
+  height: 9vh;
 }
 
 .navbar .navbar-logo img {
-  width: 300px;
-  margin-top: -7vh;
-  height: 200px;
+  width: 110px;
+  margin-top: -8vh;
+  height: 110px;
+  margin-left: -13vh;
   position: absolute;
 }
 
@@ -84,7 +86,7 @@ body {
   background-color: transparent;
   position: absolute;
   margin-left: 60vh;
-  margin-top: 15vh;
+  margin-top: 2vh;
 }
 .navbar .navbar-nav a {
   color: rgb(255, 255, 255);
