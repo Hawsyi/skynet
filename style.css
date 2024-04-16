@@ -1244,6 +1244,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 0vh;
+    background-color: #034b9d;
   }
 
   .container3 .gambar {
@@ -1371,4 +1372,3 @@ body {
     color: black;
   }
 }
-
