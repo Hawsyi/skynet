@@ -996,14 +996,14 @@ body {
     background-color: #ffffff;
     top: 100%;
     left: 100%;
-    width: 15rem;
+    width: 25rem;
     height: 60vh;
     border-radius: 20px;
     transition: 0.3s;
   }
 
   .navbar .navbar-nav.active {
-    left: 0%;
+    left: -68%;
   }
 
   .navbar .navbar-nav a {
@@ -1346,7 +1346,7 @@ body {
     position: fixed;
     top: 0;
     left: 10;
-    margin-top: 63vh;
+    margin-top: 93vh;
     right: 0;
     z-index: 9999;
   }
