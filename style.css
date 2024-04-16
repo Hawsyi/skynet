@@ -223,3 +223,51 @@ section p {
 .credit a {
   color: orangered;
 }
+
+/* media query */
+@media (max-width: 1000px) {
+  html {
+    font-size: 50%;
+  }
+  .navbar {
+    height: 5vh;
+  }
+  .navbar .navbar-logo {
+    display: none;
+  }
+  #hamburger-menu {
+    display: block;
+    margin: auto;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    right: -130%;
+    width: 20rem;
+    height: auto;
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: rgb(0, 0, 65);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+}
