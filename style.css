@@ -961,7 +961,7 @@ body {
 
 @media (max-width: 480px) {
   html {
-    font-size: 50%;
+    font-size: 100%;
   }
   .navbar {
     display: flex;
@@ -1002,7 +1002,7 @@ body {
   }
 
   .navbar .navbar-nav.active {
-    left: 0%;
+    left: -68%;
   }
 
   .navbar .navbar-nav a {
@@ -1230,7 +1230,6 @@ body {
     font-weight: 1000;
     font-size: 12px;
     height: 3vh;
-    padding: 0.5rem;
     border-radius: 10px;
     align-items: center;
   }
@@ -1260,7 +1259,7 @@ body {
     color: rgb(0, 0, 0);
     font-size: 20px;
     margin-left: 3vh;
-    width: 70vh;
+    width: 30vh;
     margin-top: -7vh;
     padding: 8rem;
     text-align: left;
@@ -1346,6 +1345,8 @@ body {
   .whatsaap img {
     height: 5vh;
     width: 5vh;
+    margin-left: -8vh;
+    margin-top: 31vh;
   }
   /*footer*/
   .container5 {
@@ -1358,8 +1359,8 @@ body {
     margin-left: 23vh;
   }
   .container5 .credit {
-    margin-left: 18vh;
-    width: 20vh;
+    margin-left: 0vh;
+    width: 100%;
   }
   .container5 a {
     color: black;
