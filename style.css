@@ -34,14 +34,15 @@ body {
   left: 0;
   right: 0;
   z-index: 9999;
-  height: 9vh;
+  height: 10vh;
 }
 
 .navbar .navbar-logo img {
-  width: 110px;
-  margin-top: -8vh;
-  height: 110px;
-  margin-left: -13vh;
+  width: 80px;
+  margin: -30px;
+  margin-top: -40px;
+  height: 80px;
+  /* margin-left: -10vh; */
   position: absolute;
 }
 
@@ -79,6 +80,7 @@ body {
 
 #hamburger-menu {
   display: none;
+  margin-bottom: 100px;
 }
 .navbar .navbar-nav {
   display: flex;
@@ -180,19 +182,20 @@ section p {
   width: 100%;
 }
 .icons {
-  padding: 3rem;
+  padding: 20px;
   justify-content: center;
   align-items: center;
 }
 .icons h3 {
   font-size: 20px;
   color: aliceblue;
-  text-align: left;
+  text-align: center;
 }
 .icons img {
   justify-content: center;
   align-items: center;
-  width: 10vh;
+  margin-left: 35px;
+  width: 6vh;
 }
 
 .container1 {
@@ -214,6 +217,7 @@ section p {
   position: relative;
   justify-content: center;
   align-items: center;
+  margin-left: 100px;
 }
 .credit a {
   color: orangered;
@@ -235,6 +239,25 @@ video {
   width: 60px;
 }
 
+.whatsaap {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0vh;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 10;
+  margin-top: 80vh;
+  margin-right: 20px;
+  right: 0;
+  z-index: 9999;
+}
+.whatsaap img {
+  height: 7vh;
+  width: 7vh;
+}
+
 /* media query */
 @media (max-width: 1000px) {
   html {
@@ -242,6 +265,8 @@ video {
   }
   .navbar {
     height: 5vh;
+    margin: auto;
+    margin-top: 20p;
   }
   .navbar .navbar-logo {
     display: none;
@@ -249,6 +274,8 @@ video {
   #hamburger-menu {
     display: block;
     margin: auto;
+    margin-top: -10px;
+    margin-left: -20px;
   }
 
   .navbar .navbar-nav {
