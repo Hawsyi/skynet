@@ -28,14 +28,14 @@
   <body>
     <nav class="navbar">
       <a href="index.php" class="navbar-logo">
-        <img src="logo_skynet-removebg-preview.png" alt=""/>
+        <img src="logo_skynet-removebg-preview.png" alt="" />
       </a>
 
       <div class="navbar-nav">
-        <a href="index.html">Home</a>
-        <a href="layanan.html">Layanan</a>
-        <a href="promo.html">Promo</a>
-        <a href="tentangskynet.html">Tentang Skynet</a>
+        <a href="#">Home</a>
+        <a href="#">Layanan</a>
+        <a href="#">Promo</a>
+        <a href="#">Tentang Skynet</a>
         <a href="#">Hubungi Kami</a>
       </div>
 
@@ -156,7 +156,9 @@
     </section>
     <!-- icon wa -->
     <div class="whatsaap">
-      <a href="https://wa.me/qr/Q3WPVFZRZXJIK1"><img src="iconwa.png" alt=""></a>
+      <a href="https://wa.me/qr/Q3WPVFZRZXJIK1"
+        ><img src="iconwa.png" alt=""
+      /></a>
     </div>
     <!-- feather icons -->
 
@@ -166,23 +168,22 @@
     <!-- my java script -->
     <script src="script.js"></script>
     <script type="text/javascript">
-    window.addEventListener('scroll', reveal);
+      window.addEventListener("scroll", reveal);
 
-    function reveal(){
-      var reveals = document.querySelectorAll('.reveal');
-      for(var i = 0; i < reveals.length; i++){
-        var windowheight = window.innerHeight;
-        var revealtop = reveals[i].getBoundingClientRect().top;
-        var revealpoint = 150;
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+        for (var i = 0; i < reveals.length; i++) {
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
 
-        if(revealtop < windowheight - revealpoint){
-          reveals[i].classList.add('active');
-        }
-        else{reveals[i].classList.remove('active');
+          if (revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
         }
       }
-    }
-
     </script>
   </body>
 </html>
