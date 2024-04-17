@@ -225,6 +225,8 @@ section p {
 
 .promo {
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 .promo img {
   width: 150px;
