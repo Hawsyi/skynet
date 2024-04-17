@@ -120,7 +120,7 @@ section {
 }
 
 section:nth-child(2) {
-  background-color: rgb(0, 238, 255);
+  color: #fff;
 }
 section:nth-child(3) {
   background-color: rgb(17, 0, 167);
@@ -175,10 +175,26 @@ section p {
 
 .background {
   object-fit: cover;
+  margin-bottom: 100px;
 }
 .background img {
   width: 100%;
   height: auto;
+}
+
+.background h1{
+  text-align: left;
+  margin-top: -250px;
+  margin-left: 50px;
+}
+
+.background p{
+  text-align: left;
+  margin-top: 70px;
+  margin-left: 50px;
+  font-size: 18px;
+  width: 800px;
+  color: #1F2833;
 }
 
 .container1 {
