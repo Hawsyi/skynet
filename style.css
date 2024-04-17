@@ -132,18 +132,13 @@ section:nth-child(4) {
 section:nth-child(5) {
   background-color: rgb(255, 255, 255);
   color: #000000;
-  border: 2px solid black;
 }
 section:nth-child(6) {
   color: #000000;
-  border-right: 2px solid black;
-  border-left: 2px solid black;
   background-color: rgb(255, 255, 255);
 }
 section:nth-child(7) {
   color: #000000;
-  border-right: 2px solid black;
-  border-left: 2px solid black;
   background-color: rgb(17, 0, 167);
 }
 
@@ -224,6 +219,10 @@ section p {
   color: orangered;
 }
 
+video {
+  border-radius: 20px;
+  width: 100%;
+}
 /* media query */
 @media (max-width: 1000px) {
   html {
@@ -269,5 +268,8 @@ section p {
 
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.2);
+  }
+  .icons img {
+    width: 60px;
   }
 }
