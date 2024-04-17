@@ -47,7 +47,7 @@
 
     <!-- persectionan -->
     <section>
-      <div class="banner">
+      <div class="banner revealgit">
         <img src="background wifi1.jpg" alt="" />
       </div>
     </section>
@@ -75,7 +75,7 @@
     </section>
 
     <section>
-      <div class="container1">
+      <div class="container1 reveal">
         <div class="penjelasan">
           <h1>HARGA SKYNET HOMELINK</h1>
           <p>Pilihan paket Skynet Homelink untuk keluarga di rumah</p>
@@ -119,8 +119,9 @@
         </div>
       </div>
     </section>
+
     <section>
-      <div class="container">
+      <div class="container reveal">
         <div class="promo">
           <img src="megaphone.png" alt="" />
           <video autoplay loop muted src="promosi vidio.mp4"></video>
@@ -128,13 +129,15 @@
         </div>
       </div>
     </section>
+
     <section>
-      <div class="container">
+      <div class="container reveal">
         <div class="tentangkami">
           <video autoplay loop muted src="tentangkami.mp4"></video>
         </div>
       </div>
     </section>
+
     <section>
       <div class="container">
         <div class="footer">
@@ -162,5 +165,24 @@
     </script>
     <!-- my java script -->
     <script src="script.js"></script>
+    <script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal(){
+      var reveals = document.querySelectorAll('.reveal');
+      for(var i = 0; i < reveals.length; i++){
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+          reveals[i].classList.add('active');
+        }
+        else{reveals[i].classList.remove('active');
+        }
+      }
+    }
+
+    </script>
   </body>
 </html>

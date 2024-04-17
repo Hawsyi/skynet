@@ -142,6 +142,7 @@ section:nth-child(6) {
 section:nth-child(7) {
   color: #000000;
   background-color: rgb(17, 0, 167);
+  height: 90px;
 }
 
 section .container {
@@ -312,4 +313,15 @@ video {
   .icons img {
     width: 60px;
   }
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
 }
