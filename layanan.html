@@ -42,24 +42,21 @@
  
  
      </nav>
-  
-     <div class="background">
-        <img src="backgroundpanjang.jpg" alt="">
-      
+
 
       <section>
 
-    <div class="prolog">
+    <div class="container reveal">
       <div class="isiprolog">
-        <h1>Jangan lagi khawatir tentang kuota internetmu!</h1>
-        <p>Dengan Skynet, nikmati akses tanpa batas dan jelajahi internet sepuasnya tanpa perlu mikirin kuota lagi!</p>
+        <h1>Jangan lagi khawatir tentang kuota internetmu! </h1>
+        <p> Dengan Skynet, nikmati akses tanpa batas dan jelajahi internet sepuasnya tanpa perlu mikirin kuota lagi!</p>
         </div>
 
     </div>
 
   </section>
   <section>
-    <div class="prolog2">
+    <div class="container reveal">
       <div class="isiprolog2">
         <p>"Hadirkan koneksi Internet terbaik di rumah dengan pilihan paket Internet dari Skynet, yang akan mendukung kelancaran semua aktivitas digital kamu di rumah. Tanpa kendala dan tanpa batasan kuota."</p>
         </div>
@@ -113,11 +110,32 @@
     </div>
   </div>
 </section>
-     </div>
+
 
 <!-- feather place -->
 <script>
       feather.replace();
     </script>
+
+      <!-- my java script -->
+      <script src="script.js"></script>
+      <script type="text/javascript">
+        window.addEventListener("scroll", reveal);
+  
+        function reveal() {
+          var reveals = document.querySelectorAll(".reveal");
+          for (var i = 0; i < reveals.length; i++) {
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+  
+            if (revealtop < windowheight - revealpoint) {
+              reveals[i].classList.add("active");
+            } else {
+              reveals[i].classList.remove("active");
+            }
+          }
+        }
+      </script>
 </body>
 </html>
