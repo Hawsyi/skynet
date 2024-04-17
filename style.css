@@ -175,29 +175,17 @@ section p {
   text-align: center;
 }
 .butt {
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  padding: 1rem;
-  width: 100%;
-  padding-right: 20vh;
-  padding-left: 20vh;
+  padding: 5rem;
 }
-.butt button {
-  align-items: center;
-  text-align: center;
+button {
+  background-color: rgb(255, 115, 0);
   justify-content: center;
-  background-color: rgb(243, 109, 0);
-  margin: auto;
-  width: 100%;
+  align-items: center;
   font-size: 20px;
   padding: 1rem;
+  width: 100%;
   border-radius: 20px;
 }
-.butt button a {
-  color: aliceblue;
-}
-
 .banner {
   width: 100%;
 }
@@ -335,29 +323,6 @@ video {
   }
   .icons img {
     width: 60px;
-  }
-  .butt {
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    padding: 1rem;
-    width: 100%;
-    padding-right: 20vh;
-    padding-left: 20vh;
-  }
-  .butt button {
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    background-color: rgb(243, 109, 0);
-    margin: auto;
-    width: 100%;
-    font-size: 20px;
-    padding: 1rem;
-    border-radius: 20px;
-  }
-  .butt button a {
-    color: aliceblue;
   }
 }
 
