@@ -141,6 +141,11 @@ section:nth-child(6) {
 }
 section:nth-child(7) {
   color: #000000;
+  background-color: rgb(228, 227, 240);
+  height: 250px;
+}
+section:nth-child(8) {
+  color: #000000;
   background-color: rgb(17, 0, 167);
   height: 90px;
 }
@@ -253,6 +258,11 @@ video {
   width: 60px;
 }
 
+iframe{
+  margin: 20px;
+  text-align: left;
+  justify-content: left;
+}
 .whatsaap {
   display: block;
   justify-content: space-between;
