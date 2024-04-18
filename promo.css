@@ -111,30 +111,10 @@ body {
 .navbar .navbar-nav a:hover::after {
   transform: scaleX(0.5);
 }
-.background {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.background img {
-  object-fit: cover;
-  height: 300vh;
+.banner {
   width: 100%;
 }
-/* prolog */
-
-.background .prolog {
-  position: absolute;
-  z-index: 9999;
-  display: block;
-}
-.background .isiprolog p {
-  margin-top: -105vh;
-  margin-left: 20vh;
-  width: 500px;
-  color: aliceblue;
+.banner img {
+  margin-top: -10vh;
+  width: 100%;
 }
