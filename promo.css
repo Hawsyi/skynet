@@ -111,10 +111,16 @@ body {
 .navbar .navbar-nav a:hover::after {
   transform: scaleX(0.5);
 }
-.banner {
+section {
+  margin: auto;
+  min-height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
-.banner img {
-  margin-top: -10vh;
+
+video {
   width: 100%;
+  height: auto;
 }
