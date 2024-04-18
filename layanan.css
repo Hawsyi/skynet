@@ -38,10 +38,10 @@ body {
 }
 
 .navbar .navbar-logo img {
-  width: 110px;
-  margin-top: -8vh;
-  height: 110px;
-  margin-left: -13vh;
+  width: 90px;
+  margin-top: -6vh;
+  height: 90px;
+  margin-left: -10vh;
   position: absolute;
 }
 
@@ -85,7 +85,7 @@ body {
   flex-wrap: wrap;
   background-color: transparent;
   position: absolute;
-  margin-left: 60vh;
+  margin-left: 30vh;
   margin-top: 2vh;
 }
 .navbar .navbar-nav a {
@@ -113,11 +113,10 @@ body {
 }
 section {
   margin: auto;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 4rem;
 }
 
 section:nth-child(2) {
@@ -175,23 +174,28 @@ section p {
 }
 
 .background {
+  width: 100%;
   object-fit: cover;
   margin-bottom: 100px;
 }
 .background img {
   width: 100%;
   height: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .background h1{
   text-align: left;
-  margin-top: -250px;
+  margin-top: -300px;
   margin-left: 50px;
+  width: 700px;
+  height: auto;
 }
 
 .background p{
   text-align: left;
-  margin-top: 70px;
+  margin-top: 40px;
   margin-left: 50px;
   font-size: 18px;
   width: 800px;
