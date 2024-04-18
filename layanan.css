@@ -228,7 +228,11 @@ section p {
   margin-left: 35px;
   width: 6vh;
 }
-
+.butt {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
 /* media query */
 @media (max-width: 1000px) {
   html {
