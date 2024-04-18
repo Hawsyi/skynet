@@ -222,6 +222,37 @@ section p {
   align-items: center;
   margin: auto;
 }
+
+.whatsaap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 10;
+  margin-top: 80vh;
+  margin-right: 20px;
+  right: 0;
+  z-index: 9999;
+  height: 10vh;
+  width: 30vh;
+}
+.whatsaap h2 {
+  color: rgb(255, 102, 0);
+  font-size: 20px;
+  animation: typing 1.5s steps(10) infinite;
+}
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+.whatsaap img {
+  height: 7vh;
+  width: 7vh;
+}
 /* media query */
 @media (max-width: 1000px) {
   html {
@@ -230,22 +261,30 @@ section p {
   .navbar {
     height: 5vh;
     margin: auto;
-    margin-top: 20p;
+    padding: 0.5rem 23%;
   }
   .navbar .navbar-logo {
-    display: none;
+    display: inline-block;
+    margin-left: 1vh;
+  }
+  .navbar .navbar-logo img {
+    width: 5vh;
+    height: 5vh;
+    margin-top: -2vh;
+    margin-left: -8vh;
+    z-index: 9999;
   }
   #hamburger-menu {
-    display: block;
+    display: inline-block;
     margin-top: -10px;
-    margin-left: -20px;
+    margin-left: 40px;
   }
 
   .navbar .navbar-nav {
     position: absolute;
     background-color: #fff;
     top: 100%;
-    right: -130%;
+    right: -100%;
     width: 20rem;
     height: auto;
     border-radius: 20px;
@@ -273,6 +312,38 @@ section p {
   }
   .icons img {
     width: 60px;
+  }
+  .whatsaap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0vh;
+    position: fixed;
+    top: 0;
+    left: 10;
+    margin-top: 80vh;
+    margin-right: 10px;
+    right: 0;
+    z-index: 9999;
+    height: 10vh;
+    width: 20vh;
+  }
+  .whatsaap h2 {
+    color: rgb(255, 102, 0);
+    font-size: 18px;
+    margin-left: 1vh;
+    animation: typing 1.5s steps(10) infinite;
+  }
+  @keyframes typing {
+    100% {
+      left: 100%;
+      margin: 0 -35px 0 35px;
+    }
+  }
+  .whatsaap img {
+    height: 7vh;
+    margin-left: 1vh;
+    width: 7vh;
   }
 }
 video {

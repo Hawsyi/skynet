@@ -1,6 +1,6 @@
 :root {
   --primary: #000000;
-  --bg: rgb(235, 233, 233);
+  --bg: rgb(43, 117, 253);
   background-blend-mode: color-burn;
 }
 @import url("https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap");
@@ -27,7 +27,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 7%;
+  padding: 1rem 2%;
   background-color: rgba(132, 220, 247, 0.479);
   position: fixed;
   top: 0;
@@ -41,8 +41,9 @@ body {
   width: 110px;
   margin-top: -8vh;
   height: 110px;
-  margin-left: -13vh;
+  margin-left: 2vh;
   position: absolute;
+  z-index: 9999;
 }
 
 .navbar .navbar-nav a:hover {
@@ -114,13 +115,156 @@ body {
 section {
   margin: auto;
   min-height: auto;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+video {
+  display: none;
+}
+.banner {
   width: 100%;
 }
-
-video {
+img {
   width: 100%;
   height: auto;
+}
+.whatsaap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0vh;
+  position: fixed;
+  top: 0;
+  left: 10;
+  margin-top: 80vh;
+  margin-right: 10px;
+  right: 0;
+  z-index: 9999;
+  height: 10vh;
+  width: 50vh;
+}
+.whatsaap h2 {
+  color: rgb(255, 102, 0);
+  font-size: 18px;
+  margin-left: 1vh;
+  animation: typing 1.5s steps(10) infinite;
+}
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+.whatsaap img {
+  height: 7vh;
+  margin-left: 1vh;
+  width: 7vh;
+}
+@media (max-width: 1000px) {
+  html {
+    font-size: 50%;
+  }
+  .navbar {
+    height: 5vh;
+    margin: auto;
+    padding: 0.5rem 23%;
+  }
+  .navbar .navbar-logo {
+    display: inline-block;
+    margin-left: 1vh;
+    z-index: 9999;
+  }
+  .navbar .navbar-logo img {
+    width: 5vh;
+    height: 5vh;
+    margin-top: -2vh;
+    margin-left: -8vh;
+    z-index: 9999;
+  }
+  #hamburger-menu {
+    display: inline-block;
+    margin-top: -10px;
+    margin-left: 40px;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    right: -100%;
+    width: 20rem;
+    height: auto;
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: rgb(0, 0, 65);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  img {
+    display: none;
+  }
+  .banner {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  video {
+    width: 100%;
+    display: block;
+    height: auto;
+    object-fit: cover;
+  }
+  .whatsaap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0vh;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 10;
+    margin-top: 80vh;
+    margin-right: 20px;
+    right: 0;
+    z-index: 9999;
+    height: 10vh;
+    width: 30vh;
+  }
+  .whatsaap h2 {
+    color: rgb(255, 102, 0);
+    font-size: 20px;
+    animation: typing 1.5s steps(10) infinite;
+  }
+  @keyframes typing {
+    100% {
+      left: 100%;
+      margin: 0 -35px 0 35px;
+    }
+  }
+  .whatsaap img {
+    height: 7vh;
+    z-index: 9999;
+    position: absolute;
+    width: 7vh;
+  }
 }
