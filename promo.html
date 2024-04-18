@@ -31,8 +31,7 @@
  
       <div class="navbar-nav">
         <a href="index.html">Home</a>
-        <a href="#">Layanan</a>
-        <a href="#">Promo</a>
+        <a href="layanan.html">Layanan</a>
         <a href="#">Tentang Skynet</a>
         <a href="#">Hubungi Kami</a>
       </div>
@@ -48,13 +47,39 @@
      <section>
       <div class="banner">
        <video controls autoplay loop muted src="promobackground.mp4"></video>
+      <img src="promobanner1.jpeg" alt="">
       </div>
      </section>
-    
+       <!-- icon wa -->
+   <div class="whatsaap">
+    <h2>kontak kami</h2>
+    <a href="https://wa.me/qr/Q3WPVFZRZXJIK1"
+      ><img src="iconwa.png" alt=""
+    /></a>
+  </div>
 
 <!-- feather place -->
 <script>
       feather.replace();
     </script>
+        <script src="script.js"></script>
+        <script type="text/javascript">
+          window.addEventListener("scroll", reveal);
+    
+          function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+              var windowheight = window.innerHeight;
+              var revealtop = reveals[i].getBoundingClientRect().top;
+              var revealpoint = 150;
+    
+              if (revealtop < windowheight - revealpoint) {
+                reveals[i].classList.add("active");
+              } else {
+                reveals[i].classList.remove("active");
+              }
+            }
+          }
+        </script>
 </body>
 </html>
