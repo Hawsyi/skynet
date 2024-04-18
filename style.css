@@ -186,13 +186,34 @@ button {
   width: 100%;
   border-radius: 20px;
 }
+.banner1 {
+  display: block;
+  position: relative;
+}
+.banner1 img {
+  object-fit: contain;
+  width: 100%;
+}
 .banner {
-  width: 100%;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0vh;
+  background: transparent;
+  position: absolute;
+  left: 70%;
+  top: 40%;
+  margin-right: 20px;
+  justify-content: center;
+  align-items: center;
 }
-.banner img {
-  margin-top: -10vh;
-  width: 100%;
+.banner h1 {
+  font-size: 80px;
 }
+.banner h2 {
+  font-size: 40px;
+}
+
 .icons {
   padding: 20px;
   justify-content: center;
@@ -323,6 +344,25 @@ video {
   }
   .icons img {
     width: 60px;
+  }
+  .banner {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0vh;
+    background: transparent;
+    position: absolute;
+    left: 70%;
+    top: 40%;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner h1 {
+    font-size: 15px;
+  }
+  .banner h2 {
+    font-size: 15px;
   }
 }
 
