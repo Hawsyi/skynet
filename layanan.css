@@ -153,7 +153,7 @@ section .container {
 }
 
 section h1 {
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
   justify-content: center;
 }
@@ -170,7 +170,7 @@ section h3 {
 }
 
 section p {
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -197,6 +197,7 @@ section p {
   background-color: rgb(0, 0, 156);
   cursor: pointer;
   transition: 0.8s;
+  margin: 18px;
 }
 .paketharga:hover {
   transform: scale(1.1);
