@@ -141,6 +141,11 @@ section:nth-child(6) {
 }
 section:nth-child(7) {
   color: #000000;
+  background-color: rgb(185, 47, 47);
+  height: 90px;
+}
+section:nth-child(8) {
+  color: #000000;
   background-color: rgb(17, 0, 167);
   height: 90px;
 }
