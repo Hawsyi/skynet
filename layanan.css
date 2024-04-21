@@ -69,13 +69,6 @@ body {
   margin-top: 7vh;
   stroke-width: 10px;
 }
-.navbar .navbar-extra .search {
-  color: white;
-  position: absolute;
-  margin-left: -150vh;
-  margin-top: 7vh;
-  display: none;
-}
 
 #hamburger-menu {
   display: none;
@@ -85,7 +78,7 @@ body {
   flex-wrap: wrap;
   background-color: transparent;
   position: absolute;
-  margin-left: 30vh;
+  margin-left: 50vh;
   margin-top: 2vh;
 }
 .navbar .navbar-nav a {
@@ -111,6 +104,13 @@ body {
 .navbar .navbar-nav a:hover::after {
   transform: scaleX(0.5);
 }
+.bacground {
+  object-fit: cover;
+  width: 100%;
+}
+.background img {
+  width: 100%;
+}
 section {
   margin: auto;
   min-height: auto;
@@ -129,19 +129,11 @@ section:nth-child(3) {
 section:nth-child(4) {
   color: #000000;
   background-color: rgb(17, 0, 167);
+  height: 100vh;
 }
 section:nth-child(5) {
-  background-color: rgb(17, 0, 167);
-  color: #000000;
-}
-section:nth-child(6) {
-  color: #000000;
-  background-color: rgb(17, 0, 167);
-}
-section:nth-child(7) {
-  color: #000000;
-  background-color: rgb(17, 0, 167);
-  height: 90px;
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
 }
 
 section .container {
@@ -156,6 +148,7 @@ section h1 {
   font-size: 40px;
   text-align: center;
   justify-content: center;
+  color: orangered;
 }
 section h2 {
   text-align: center;
@@ -170,6 +163,7 @@ section h3 {
 }
 
 section p {
+  color: aliceblue;
   font-size: 20px;
   text-align: center;
 }
@@ -180,6 +174,35 @@ section p {
   margin-left: 50px;
   width: 700px;
   height: auto;
+}
+.social {
+  display: block;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.credit {
+  border-top: 1px solid aliceblue;
+}
+.credit p {
+  font-size: 15px;
+}
+.credit a {
+  color: orangered;
+}
+.kontak {
+  padding: 1rem;
+  color: aliceblue;
+}
+.kontak h2 {
+  font-size: 25px;
+}
+.kontak h3 {
+  font-size: 20px;
+}
+.kontak p {
+  font-size: 15px;
 }
 
 .container1 {
@@ -192,12 +215,15 @@ section p {
 .paketharga {
   border-radius: 20px;
   padding: 3rem;
-  color: aliceblue;
-  border: 2px solid white;
-  background-color: rgb(0, 0, 156);
+  color: rgb(22, 22, 22);
+  border: 2px solid rgb(17, 0, 167);
+  background-color: rgb(255, 255, 255);
   cursor: pointer;
   transition: 0.8s;
   margin: 18px;
+}
+.paketharga p {
+  color: #000000;
 }
 .paketharga:hover {
   transform: scale(1.1);
@@ -347,10 +373,14 @@ section p {
     margin-left: 1vh;
     width: 7vh;
   }
+  .icons h3 {
+    font-size: 15px;
+  }
   section h1 {
     font-size: 20px;
     text-align: center;
     justify-content: center;
+    color: orangered;
   }
   section h2 {
     text-align: center;
@@ -367,10 +397,10 @@ section p {
   section p {
     font-size: 10px;
     text-align: center;
+    color: aliceblue;
   }
 }
 video {
-  border-radius: 20px;
   width: 100%;
 }
 
