@@ -265,4 +265,7 @@ img {
     position: absolute;
     width: 7vh;
   }
+  .bannerpromo {
+    display: none;
+  }
 }
