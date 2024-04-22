@@ -120,7 +120,9 @@ section:nth-child(3) {
 }
 section:nth-child(4) {
   color: #000000;
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
+  background-image: url("bg.jpg");
+  background-size: cover;
 }
 section:nth-child(5) {
   background-color: rgb(17, 0, 167);
@@ -128,7 +130,9 @@ section:nth-child(5) {
 }
 section:nth-child(6) {
   color: #000000;
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
+  background-image: url("bg.jpg");
+  background-size: cover;
 }
 section:nth-child(7) {
   color: #000000;
@@ -257,10 +261,22 @@ button {
   border-radius: 20px;
   padding: 3rem;
   color: aliceblue;
-  border: 2px solid white;
-  background-color: rgb(0, 0, 156);
+  border: 1px ;
+  /* background-color: rgb(0, 0, 156); */
+  background-image: url("images/Frame\ 38149.png");
+  background-size: 100%;
   cursor: pointer;
   transition: 0.8s;
+  margin: 20px;
+  height: 120px;
+}
+.paketharga p{
+  color: #ffffff;
+  margin-top: -20px ;
+}
+.paketharga h3{
+  color: #000000;
+  margin-top: 10px;
 }
 .paketharga:hover {
   transform: scale(1.1);
@@ -365,7 +381,6 @@ iframe {
   height: 50vh;
 }
 
-/* loader */
 .main {
   display: flex;
   justify-content: center;
@@ -437,6 +452,65 @@ iframe {
   }
 }
 
+/* loader */
+.loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f9fb;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+.loader-hidden{
+  opacity: 0;
+  visibility: hidden;
+}
+/* .loader::after{
+  content:"";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: #7449f5;
+  border-radius: 50%;
+  animation: loading 0.75s ease;
+} */
+.loader img{
+  animation: bounce 0.9s infinite;
+}
+@keyframes bounce{
+  /* 10%{
+    height: 50px;
+    width: 50px;
+  } */
+  /* 30%{
+    height: 50px;
+    width: 40px;
+  } */
+  50%{
+    /* height:30px;
+    width:57px; */
+    transform: translateY(24px);
+  }
+  /* 75%{
+    height: 50px;
+    width: 57px;
+  } */
+  100%{
+    transform: translateY(0px);
+  }
+}
+@keyframes loading {
+  from{
+    transform: rotate(0turn);
+  }
+  to{
+    transform: rotate(1turn);
+  }
+}
 /* media query */
 @media (max-width: 1000px) {
   html {
@@ -588,6 +662,9 @@ iframe {
     margin-top: 0vh;
     font-size: 15px;
     font-family: cursive;
+  }
+  .paketharga{
+    height: 98%;
   }
 }
 
