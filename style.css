@@ -143,6 +143,11 @@ section:nth-child(8) {
 }
 section:nth-child(9) {
   color: #000000;
+  background-color: rgb(246, 246, 248);
+  height: 205px;
+}
+section:nth-child(10) {
+  color: #000000;
   background-color: rgb(17, 0, 167);
   height: 205px;
 }
@@ -375,8 +380,10 @@ iframe {
   align-items: center;
   text-align: center;
   margin-top: 8vh;
+  color: aliceblue;
 }
 .box h2 {
+  color: aliceblue;
   justify-content: center;
   align-items: center;
   text-align: center;
