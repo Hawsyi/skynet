@@ -161,6 +161,7 @@ img {
   margin-left: 1vh;
   width: 7vh;
 }
+
 @media (max-width: 1000px) {
   html {
     font-size: 50%;
