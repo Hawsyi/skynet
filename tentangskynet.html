@@ -22,33 +22,99 @@
     <title>Registrasi</title>
     
         <body>
-        <nav class="navbar">
-     
- 
+          <nav class="navbar">
+            <a href="index.php" class="navbar-logo">
+              <img src="logo_skynet-removebg-preview.png" alt="" />
+            </a>  
  
        <div class="navbar-nav">
-         <a href="layanan.php">Layanan</a>
-         <a href="promo.php">Promo</a>
-         <a href="#">Tentang Skynet</a>
-         <a href="#">Hubungi Kami</a>
+         <a href="index.html">Home</a>
+         <a href="layanan.html">Layanan</a>
+         <a href="promo.html">Promo</a>
+         <a href="tentangskynet.html">Tentang Skynet</a>
+
        </div>
  
        <div class="navbar-extra">
          <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
          
        </div>
- 
- 
      </nav>
-     
      <section>
-      <div class="container">
-<img src="background panjang.jpg" alt="">
-     </div>
-
+      <div class="main reveal">
+        <div class="box">
+          <h1>Skynet</h1>
+          <h2>Internet Solutions</h2>
+        </div>
+      </div>
     </section>
+     <section>
+      <div class="container reveal">
+      <h1>Skynet merupakan sebuah anak perusahaan dari Hayat Teknologi Informatika. Melalui perjalanan yang kaya akan inovasi dan dedikasi, Skynet telah menjadi pionir dalam kemitraan strategis dengan Bumdes Bina Teknologi Kabupten Bogor.
+        Melalui kemitraan tersebut, Skynet tidak hanya membawa teknologi ke pelosok desa, tetapi juga membuka pintu menuju masa depan yang lebih cerah, di mana akses internet menjadi jembatan untuk pertumbuhan ekonomi dan peningkatan kualitas hidup bagi semua masyarakat di desa.
+        
+        </h1>
+     <p>visi:
+      menciptakan konektivitas yang merata dan inklusif di seluruh wilayah desa, dengan berkomitmen untuk memberikan akses internet yang handal dan terjangkau kepada setiap rumah tangga, serta mendorong pertumbuhan ekonomi lokal dan pemberdayaan masyarakat melalui teknologi. 
+      
+      misi:
+      1. Memberikan akses internet berkualitas tinggi dan terjangkau kepada setiap rumah tangga di desa.
+      2. ⁠Mendorong pertumbuhan ekonomi lokal dengan mendukung bisnis dan inovasi melalui konektivitas yang handal.
+      3. ⁠Menyediakan layanan pelanggan yang ramah dan responsif untuk memastikan kepuasan pengguna.
+      4. ⁠Mengedukasi dan melatih masyarakat desa dalam literasi digital dan pemanfaatan teknologi.
+      5. ⁠Berkolaborasi dengan pemerintah dan organisasi lokal untuk memperluas cakupan layanan wifi dan meningkatkan infrastruktur teknologi di desa.</p>
+    </div>
+      </section>
+      
+      <section>
+        <div class="container ">
+          <div class="footer">
+            <div class="kontak">
+              <h2>Informasi Kontak</h2>
+              <h3>Head Office</h3>
+              <p>Citra Graha Prima Blok R 22 No. 15 Singasari Jonggol</p>
+              <div class="social">
+                <a
+                  href="https://www.instagram.com/skynet.officiall?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  ><img src="instagram.png" alt=""
+                /></a>
+                <img src="facebook.png" alt="" />
+              </div>
+              <p><i data-feather="phone-call"></i>0857 7773 0062</p>
+            </div>
+  
+            <div class="credit">
+              <p>Created by<a href=""> Hawsyi </a>.|&copy;2024.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="loader">
+        <img src="images/tulisan.png" alt="" />
+      </div>
+  
 <!-- feather place -->
-<script>
+  <!-- my java script -->
+  <script src="loader.js"></script>
+  <script src="script.js"></script>
+  <script type="text/javascript">
+    window.addEventListener("scroll", reveal);
+
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+      for (var i = 0; i < reveals.length; i++) {
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if (revealtop < windowheight - revealpoint) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+  </script><script>
       feather.replace();
     </script>
 </body>
