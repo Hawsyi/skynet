@@ -113,7 +113,9 @@ section {
   align-items: center;
 }
 section:nth-child(2) {
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
+  background-image: url("images/bg-tentang.jpg");
+  background-size: cover;
 }
 section:nth-child(3) {
   background-image: url("bg.jpg");
@@ -128,7 +130,18 @@ section .container {
   align-items: center;
   text-align: center;
 }
+section .container h1{
+  margin: auto;
 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+}
+
+section .container p{
+  font-size: 12px;
+}
 section:nth-child(4) {
   color: #000000;
   background-color: rgb(17, 0, 167);
@@ -161,6 +174,7 @@ section:nth-child(4) {
   border-radius: 50%;
   overflow: hidden;
   margin-top: 10vh;
+  margin-bottom: 20px;
 }
 
 .box::before {
