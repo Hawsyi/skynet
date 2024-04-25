@@ -176,9 +176,9 @@ img {
     margin-left: 1vh;
   }
   .navbar .navbar-logo img {
-    width: 8vh;
-    height: 8vh;
-    margin-top: -22px;
+    width: 5vh;
+    height: 5vh;
+    margin-top: -2vh;
     margin-left: -8vh;
     z-index: 9999;
   }
