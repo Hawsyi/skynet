@@ -211,13 +211,13 @@ button {
   color: #000000;
 }
 .banner {
+  background-image: url("images/Frame\ 38149.png");
+  background-size: 100%;
   display: block;
   justify-content: space-between;
   align-items: center;
   margin-top: 0vh;
-  background: aliceblue;
   border-radius: 20px;
-  border: 12px solid black;
   position: absolute;
   left: 70%;
   top: 40%;
