@@ -338,35 +338,45 @@ iframe {
   width: 20%;
 }
 .whatsaap {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   margin-top: 0vh;
   position: fixed;
   top: 0;
-  left: 10;
+  left: 90%;
   margin-top: 80vh;
   right: 0;
   z-index: 9999;
-  height: 10vh;
+  height: 15vh;
   width: 50vh;
 }
-.whatsaap h2 {
-  color: rgb(255, 102, 0);
-  font-size: 18px;
-  margin-left: 1vh;
-  animation: typing 1.5s steps(10) infinite;
-}
-@keyframes typing {
-  100% {
-    left: 100%;
-    margin: 0 -35px 0 35px;
-  }
+.wa img {
+  width: 7vh;
+  height: 7vh;
+  margin-left: 10vh;
+  animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
 }
 .whatsaap img {
-  height: 7vh;
-  margin-left: 1vh;
   width: 7vh;
+  height: 7vh;
+}
+.whatsaap h2 {
+  flex-wrap: wrap;
+  width: 10px;
+  margin-left: 10vh;
+  color: orangered;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(-3px);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  100% {
+    transform: translateX(-3px);
+  }
 }
 
 .constories {
@@ -591,38 +601,6 @@ iframe {
   .banner h2 {
     font-size: 13px;
   }
-  .whatsaap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0vh;
-    position: fixed;
-    top: 0;
-    left: 10;
-    margin-top: 80vh;
-    margin-right: 10px;
-    right: 0;
-    z-index: 9999;
-    height: 10vh;
-    width: 20vh;
-  }
-  .whatsaap h2 {
-    color: rgb(255, 102, 0);
-    font-size: 18px;
-    margin-left: 1vh;
-    animation: typing 1.5s steps(10) infinite;
-  }
-  @keyframes typing {
-    100% {
-      left: 100%;
-      margin: 0 -35px 0 35px;
-    }
-  }
-  .whatsaap img {
-    height: 7vh;
-    margin-left: 1vh;
-    width: 7vh;
-  }
 
   .constories {
     display: block;
@@ -648,7 +626,36 @@ iframe {
     border-radius: 100px;
     width: 50%;
   }
-
+  .whatsaap {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0vh;
+    position: fixed;
+    top: 0;
+    left: 76%;
+    margin-top: 80vh;
+    right: 0;
+    z-index: 9999;
+    height: 15vh;
+    width: 50vh;
+  }
+  .wa img {
+    width: 7vh;
+    height: 7vh;
+    margin-left: 1vh;
+    animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+  }
+  .whatsaap img {
+    width: 7vh;
+    height: 7vh;
+  }
+  .whatsaap h2 {
+    flex-wrap: wrap;
+    width: 10px;
+    margin-left: 1vh;
+    color: orangered;
+  }
   .box h1 {
     justify-content: center;
     align-items: center;

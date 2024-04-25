@@ -120,7 +120,7 @@ section:nth-child(2) {
 section:nth-child(3) {
   background-image: url("bg.jpg");
   background-size: cover;
-  height: 100vh;
+  height: auto;
 }
 section .container {
   display: block;
@@ -130,17 +130,41 @@ section .container {
   align-items: center;
   text-align: center;
 }
-section .container h1{
+
+section .containerr h1 {
   margin: auto;
 
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 15px;
+  font-size: 40px;
+  padding: 5rem;
+}
+section .containerr h2 {
+  margin: auto;
+  padding: 5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-size: 20px;
 }
 
-section .container p{
-  font-size: 12px;
+section .containerr p {
+  font-size: 20px;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 3rem;
+}
+section .containerr h3 {
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5rem;
+  font-size: 20px;
+  padding-right: 5rem;
 }
 section:nth-child(4) {
   color: #000000;
@@ -165,6 +189,10 @@ section:nth-child(4) {
   padding: 1rem;
   color: aliceblue;
 }
+.main {
+  padding-top: 10rem;
+}
+
 .box {
   width: 180px;
   height: 180px;
@@ -175,6 +203,7 @@ section:nth-child(4) {
   overflow: hidden;
   margin-top: 10vh;
   margin-bottom: 20px;
+  margin: auto;
 }
 
 .box::before {
@@ -200,19 +229,24 @@ section:nth-child(4) {
   border-radius: 30%;
   animation: animasi 15s ease-in-out infinite;
 }
-.box h1 {
+.containerr .box h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 8vh;
+  margin-top: -2vh;
+  margin-left: -7vh;
   color: aliceblue;
+  font-size: 30px;
 }
-.box h2 {
+.containerr .box h2 {
   color: aliceblue;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 0vh;
+  margin-top: -22vh;
+  margin-left: -23vh;
+  height: 10px;
+  width: 50vh;
   font-size: 15px;
   font-family: cursive;
 }
@@ -346,19 +380,24 @@ section:nth-child(4) {
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.2);
   }
-  .box h1 {
+  .containerr .box h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 8vh;
+    margin-top: 3vh;
+    margin-left: 0;
+    color: aliceblue;
     font-size: 30px;
   }
-  .box h2 {
+  .containerr .box h2 {
+    color: aliceblue;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 0vh;
+    margin-top: -7vh;
     font-size: 15px;
+    width: 20vh;
+    margin-left: -5vh;
     font-family: cursive;
   }
 }
