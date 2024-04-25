@@ -352,7 +352,9 @@ section:nth-child(4) {
 
   .navbar .navbar-nav {
     position: absolute;
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-image: url("images/bg-nav.png");
+    background-size: cover;
     top: 100%;
     right: -100%;
     width: 20rem;
@@ -369,11 +371,14 @@ section:nth-child(4) {
     color: aliceblue;
     display: block;
     margin: 1.5rem;
-    padding: 1rem;
-    font-size: 2rem;
-    background-color: grey;
+    margin-left: 40px;
+    padding: 10px;
+    font-size: 14px;
+    background-color: rgb(31, 40, 51, 90%);
     border-radius: 20px;
     width: 10vh;
+    align-items: center;
+    justify-content: center;
   }
 
   .navbar .navbar-nav a::after {
