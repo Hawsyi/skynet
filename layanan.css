@@ -408,11 +408,14 @@ button {
   }
 
   .navbar .navbar-nav a {
-    color: rgb(0, 0, 65);
+    color: aliceblue;
     display: block;
     margin: 1.5rem;
-    padding: 0.5rem;
+    padding: 1rem;
     font-size: 2rem;
+    background-color: grey;
+    border-radius: 20px;
+    width: 10vh;
   }
 
   .navbar .navbar-nav a::after {
