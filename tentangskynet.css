@@ -112,12 +112,8 @@ section {
   justify-content: center;
   align-items: center;
 }
+
 section:nth-child(2) {
-  /* background-color: aliceblue; */
-  background-image: url("images/bg-tentang.jpg");
-  background-size: cover;
-}
-section:nth-child(3) {
   background-image: url("bg.jpg");
   background-size: cover;
   height: auto;
@@ -130,43 +126,31 @@ section .container {
   align-items: center;
   text-align: center;
 }
-
 section .containerr h1 {
-  margin: auto;
-
+  font-size: 50px;
+  padding-top: 2rem;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 40px;
-  padding: 5rem;
 }
 section .containerr h2 {
-  margin: auto;
+  font-size: 25px;
   padding: 5rem;
   justify-content: center;
   align-items: center;
   text-align: left;
-  font-size: 20px;
+}
+section .containerr p {
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 2rem;
 }
 
-section .containerr p {
-  font-size: 20px;
-  text-align: left;
-  justify-content: center;
-  align-items: center;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  padding-bottom: 3rem;
-}
-section .containerr h3 {
-  text-align: left;
-  justify-content: center;
-  align-items: center;
-  padding-left: 5rem;
-  font-size: 20px;
-  padding-right: 5rem;
-}
-section:nth-child(4) {
+section:nth-child(3) {
   color: #000000;
   background-color: rgb(17, 0, 167);
   height: auto;
@@ -182,6 +166,9 @@ section:nth-child(4) {
 .credit {
   border-top: 1px solid aliceblue;
 }
+.credit p {
+  font-size: 15px;
+}
 .credit a {
   color: orangered;
 }
@@ -189,6 +176,16 @@ section:nth-child(4) {
   padding: 1rem;
   color: aliceblue;
 }
+.kontak h2 {
+  font-size: 25px;
+}
+.kontak h3 {
+  font-size: 20px;
+}
+.kontak p {
+  font-size: 15px;
+}
+
 .main {
   padding-top: 10rem;
 }
@@ -230,27 +227,21 @@ section:nth-child(4) {
   animation: animasi 15s ease-in-out infinite;
 }
 .containerr .box h1 {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: -2vh;
-  margin-left: -7vh;
-  color: aliceblue;
   font-size: 30px;
+  margin: auto;
+  margin-top: 6vh;
 }
 .containerr .box h2 {
-  color: aliceblue;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: -22vh;
-  margin-left: -23vh;
-  height: 10px;
-  width: 50vh;
   font-size: 15px;
+  margin: auto;
+  width: 100%;
+  margin-left: -11vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   font-family: cursive;
+  margin-top: -12vh;
 }
-
 @keyframes animasi {
   0% {
     transform: translateY(0) rotate(0) scale(1.6);
@@ -352,7 +343,6 @@ section:nth-child(4) {
 
   .navbar .navbar-nav {
     position: absolute;
-    /* background-color: #fff; */
     background-image: url("images/bg-nav.png");
     background-size: cover;
     top: 100%;
@@ -389,24 +379,20 @@ section:nth-child(4) {
     transform: scaleX(0.2);
   }
   .containerr .box h1 {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 3vh;
-    margin-left: 0;
-    color: aliceblue;
     font-size: 30px;
+    margin: auto;
+    margin-top: 4vh;
   }
   .containerr .box h2 {
-    color: aliceblue;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: -7vh;
     font-size: 15px;
-    width: 20vh;
-    margin-left: -5vh;
+    margin: auto;
+    width: 100%;
+    margin-left: -4vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     font-family: cursive;
+    margin-top: -3vh;
   }
 }
 .reveal {
