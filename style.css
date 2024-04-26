@@ -592,13 +592,12 @@ iframe {
     justify-content: space-between;
     align-items: center;
     margin-left: -2vh;
-    background: transparent;
     position: absolute;
-    border: 5px solid black;
     border-radius: 10px;
-    background-color: aliceblue;
     justify-content: center;
     align-items: center;
+    background-image: url("images/Frame\ 38149.png");
+    background-size: 100%;
   }
   .banner h1 {
     font-size: 15px;
