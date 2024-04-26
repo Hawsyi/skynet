@@ -436,11 +436,14 @@ footer .credit a:hover {
 
   .navbar .navbar-nav {
     position: absolute;
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-image: url("images/bg-nav.png");
+    background-size: cover;
     top: 100%;
     right: -100%;
     width: 20rem;
-    height: 100vh;
+    height: auto;
+    border-radius: 20px;
     transition: 0.3s;
   }
 
@@ -449,11 +452,17 @@ footer .credit a:hover {
   }
 
   .navbar .navbar-nav a {
-    color: rgb(0, 0, 0);
+    color: aliceblue;
     display: block;
     margin: 1.5rem;
-    padding: 0.5rem;
-    font-size: 2rem;
+    margin-left: 40px;
+    padding: 10px;
+    font-size: 14px;
+    background-color: rgb(31, 40, 51, 90%);
+    border-radius: 20px;
+    width: 10vh;
+    align-items: center;
+    justify-content: center;
   }
   .navbar .navbar-nav a:hover {
     color: green;
